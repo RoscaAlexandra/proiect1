@@ -53,3 +53,18 @@ header {
 .option:hover{
   color: orange;
 }
+
+/*face o lista fara bulina*/
+ul.nobullet{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer{
+  width:100%;
+  height: 150px;
+  background-color: #9390ad;
+  position:relative;
+  bottom:0;
+}
