@@ -43,14 +43,34 @@ header {
 }
 .travel{
   margin: 1%;
-  width:7%;
+  width:20%;
   padding: 5px;
   text-align: center;
   color:#F68536;
-  font-size: 100%;
+  font-size: 19px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+p.inherited{
+  width: 50%;
+  float:left;
+  position: relative;
+  left:2%;
+  display: inline-block;
+  font-family: inherit;
+  margin:10px 2px 2px 2px;
+
+}
+img.littleplane{
+  width:15%;
+  height: auto;
+  opacity:0.7;
+  position: relative;
+  left:4%;
+  top:0;
+  float:left;
+
 }
 .option{
   margin: 1%;
@@ -163,6 +183,9 @@ header {
   border: 2px solid #F68536;
   background-color: transparent;
 }
+.button21:hover{
+  opacity: 1;
+}
 /*face o lista fara bulina*/
 ul.nobullet{
   list-style-type: none;
@@ -238,6 +261,61 @@ padding-top: 15%;
   position:relative;
   top:100px;
   left:100px;
+}
+.whitecontainer{
+  background-color: white;
+  height: 450px;
+}
+.subwhitecontainer{
+  width:30%;
+  height:40%;
+  float:left;
+  margin:2px;
+  position: relative;
+  top:10%;
+  left:4%;
+}
+.subsubwhitecontainer{
+  width:60%;
+  float:left;
+  position:relative;
+  top:20%;
+  left:15%;
+  color:#666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a.orangelink{
+  color:#F68536;
+  text-decoration: none;
+}
+a.orangelink:hover{
+  opacity: 1;
+}
+img.icon{
+  width:10%;
+  height: auto;
+  opacity:0.4;
+  position: relative;
+  left:5%;
+  top:45%;
+  float:left;
+
+}
+
+a.link1{
+  text-decoration: none;
+  color:inherit;
+}
+p.whitesquare{
+  width:70%;
+  height: 70%;
+  margin:15% 5% 5% 15%;
+  text-align: center;
+  text-decoration: none;
+}
+.whitesquare:hover{
+  border:2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .transparent{
   display:inline-block;
@@ -397,15 +475,11 @@ font-family:Arial, Helvetica, sans-serif;
   height:33.34%;
   text-align: center;
   font-size:25px;
-font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   vertical-align: middle;
   line-height: 200px;
   color:white;
-  cursor: pointer;
   float:left;
-
-
-
 }
 
 .part2{
@@ -414,7 +488,6 @@ font-family:Arial, Helvetica, sans-serif;
   text-align: center;
   vertical-align: middle;
   line-height: 200px;
-  cursor: pointer;
   color:white;
 }
 .part3{
