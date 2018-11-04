@@ -234,6 +234,38 @@ footer{
   font-size: 20px;
 
 }
+.box2prim{
+  display:inline-block;
+  width:22%;
+  height:120%;
+  position:relative;
+  top:0;
+  padding-left: 2%;
+  margin: 1% 1% 1% 0;
+  letter-spacing: 2px;
+}
+.box22
+{
+  height:50%;
+}
+.box23
+{height: 50%;
+color: black;
+background-color: white;
+}
+box
+.inbox1
+{
+  text-align: center;
+  color:black;
+  font-size: 15px;
+  font-style: bold;
+}
+.inbox2
+{
+  color:black;
+  font-size: 12px;
+}
 .down{
 padding-top: 15%;
 }
@@ -439,10 +471,23 @@ p.little2{
   top:2%;
   padding-left:42%;
 }
+.learn
+{
+width:100%;
+height:10px;
+color:orange;
+text-decoration: none;
+}
 .boxx{
   width:100%;
   height:800px;
 
+}
+.sep
+{
+opacity: :0.1;
+font-style: italic;
+font-size: 12px;
 }
 .largebox
 {
@@ -529,20 +574,20 @@ line-height: 150px;
 
 }
 #place7{
-background-image : linear-gradient(to bottom right, #55595C,#564E37,#282C11);
+background-image : linear-gradient(to bottom right, #3A3836,#332E1D,#272717);
 }
 #place8{
-background-image : linear-gradient(to bottom right,#657D70,#707D5F,#6C7D49);
+background-image : linear-gradient(to bottom right,#3C453A,#40493C,#40493C);
 
 }
 #place9{
-background-image : linear-gradient(to bottom right,#C1C5C4,#9C8D80,#5B5851);
+background-image : linear-gradient(to bottom right,#6C6C6C,#5A4F49,#44403A);
 }
 #place10{
-background-image : linear-gradient(to bottom right,#7BB7D1,#7DA2AB,#598091);
+background-image : linear-gradient(to bottom right,#517986,#556B73,#4A6470);
 }
 #place11{
-  background-image : linear-gradient(to bottom right,#C1C5C4,#9C8D80,#5B5851);
+  background-image : linear-gradient(to bottom right,#6C6C6C,#5A4F49,#44403A);
 }
 body{
   min-width: 960px;
