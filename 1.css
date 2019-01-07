@@ -76,6 +76,7 @@ img.littleplane{
   color:#666666;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  font-size:1.5vw;
 
 }
 .option:hover{
@@ -85,13 +86,14 @@ img.littleplane{
 .option2{
   color:#F68536;
   width:20%;
-  height:7%;
+  height:2vw;
   padding:2%;
   text-align: center;
   /*font-size:100%;*/
   font-weight: bold;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
 }
 
 .option2:hover{
@@ -101,40 +103,82 @@ img.littleplane{
 
 .option3{
   width:40%;
-  height:7%;
+  height:2vw;
   padding:0 5% 5% 5%;
   background-color: white;
+
+}
+@media screen and (max-width: 700px) {
+  .option3{
+    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+    height:5vw;
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+
+  }
 }
 .option33{
-  width:95%;
-  height:7%;
+  width:80%;
+  height:2vw;
   padding:0 0 5% 5%;
   background-color: white;
 }
+@media screen and (max-width: 700px) {
+  .option33 {
+    width: 50%;
+    height:5vw;
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+
+  }
+}
+
 .option333{
   width:95%;
-  height:7%;
+  height:2vw;
   padding:0 2% 5% 2%;
   background-color: white;
 }
+@media screen and (max-width: 700px) {
+  .option333 {
+    width: 95%;
+    height:5vw;
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    /*float:right;*/
+  }
+}
 #ascuns{
   display:none;
-  width:100%;
-  height:90%;
+  width:95%;
+  height:87vw;
   float:left;
+  /*position:absolute;
+  bottom:0;*/
 }
 
 .option4{
   width:40%;
-  height:1%;
+  height:0.5vw;
   padding:5%;
   background-color: white;
   color:#b3b3cc;
   text-align: left;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
 }
+@media screen and (max-width: 700px) {
+  .option4 {
+    height:0.5vw;
 
+  }
+}
 .sel{
   float:left;
   background-color: #f0f0f5;
@@ -145,6 +189,13 @@ img.littleplane{
   border-radius: 4px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+@media screen and (max-width: 700px) {
+  .sel{
+    width: 100%;
+    height:0.1vw;
+  }
 }
 .button1{
   color:white;
@@ -165,6 +216,12 @@ img.littleplane{
   border-radius: 5px;
   border: 2px solid white;
   background-color: transparent;
+  height:3vw;
+}
+@media screen and (max-width: 700px) {
+  .button2 {
+  height:7vw;
+  }
 }
 .button2:hover{
   opacity: 1;
@@ -229,18 +286,34 @@ ul.nobullet{
   border-bottom: 1.5px solid #F68536;
 
 }
+@media screen and (max-width: 700px) {
+  .littlebox {
+
+    top:1vw;
+  }
+}
 .box2{
   display:inline-block;
   width:22%;
-  height:100%;
+  height:30vw;
   position:relative;
   top:0;
   padding-left: 2%;
-
   margin: 1% 1% 1% 1%;
   letter-spacing: 2px;
   font-size: 20px;
 
+
+}
+@media screen and (max-width: 700px) {
+  .box2 {
+    width: 80%;
+    height:60vw;
+    font-size:3vw;
+    float:left;
+    margin-left:0;
+
+  }
 }
 .box2prim{
   display:inline-block;
@@ -362,36 +435,50 @@ padding-top: 15%;
 }
 .whitesmoke{
   background-color: whitesmoke;
-  height:1000px;
+  width:100%;
+  height:85vw;
   position:relative;
 }
-
+@media screen and (max-width: 700px) {
+  .whitesmoke {
+    width: 100%;
+    height:300vw;
+  }
+}
 .whitee{
   display: inline-block;
   background-color: white;
   width:40%;
-  max-width: 440px;
-  height:90%;
-  max-height: 600px;
+  /*max-width: 440px;*/
+  height:80%;
+  /*max-height: 600px;*/
   float:left;
   position:relative;
-  top:100px;
-  left:100px;
+  top:10%;
+  left:10%;
   box-shadow: 0px 20px 15px -10px #661400;
+}
+@media screen and (max-width: 700px) {
+  .whitee {
+    width: 70%;
+    height:75%;
+    left:17%;
+  }
 }
 .rosu{
   display:block;
-  height:10%;
+  height:2vw;
   max-height: 50px;
   width:60%;
   float:left;
   position:absolute;
-  bottom:2%;
+  bottom:1vw;
   left:20%;
   text-align: center;
   color:red;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  font-size: 2vw;
 
 }
 .whitecontainer{
@@ -469,6 +556,12 @@ p.little{
   font-weight:200;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 700px) {
+  .little {
+   font-size:2vw;
+   height:4vw;
+  }
+}
 p.little2{
   color:white;
   position:relative;
@@ -476,6 +569,12 @@ p.little2{
   font-weight:200;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .little2{
+   font-size:3vw;
+   height:3vw;
+  }
 }
 .fade{
   opacity: 0.5;
@@ -505,9 +604,10 @@ p.little2{
   position:relative;
   top:10px;
   left:20%;
-  height: 33.33%;
+  height: 33.33vw;
 
 }
+
 .dim0{
  position:relative;
   top:0;
@@ -520,18 +620,40 @@ p.little2{
   top:0;
   left:25%;
   width: 50%;
-  height: 33.33%;
+  height: 30vw;
 }
+@media screen and (max-width: 700px) {
+  .dim1{
+  height:10%;
+  }
+}
+
 .dim2{
   position:relative;
-  top:10px;
+  top:5vw;
   left:15%;
   width:100%;
-  height:33.33%;
+  height:30vw;
+}
+@media screen and (max-width: 700px) {
+  .dim2{
+    top:2vw;
+    left:5%;
+    height:40%;
+    width: 90%;
+  }
 }
 .adaugat{
-  position:relative;
-  top:50px;
+  position:absolute;
+  top:70vw;
+  height:20%;
+
+}
+@media screen and (max-width: 700px) {
+  .adaugat{
+   top:240vw;
+   height:50%;
+  }
 }
 .dim3{
   position:relative;
@@ -559,16 +681,27 @@ p.little2{
 .largegrey{
   color:#666666;
  position: relative;
- top:50px;
-  font-size: 50px;
+ top:5vw;
+  font-size: 5vw;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .largegrey {
+  font-size:7vw;
+  top:2vw;
+  }
 }
 .little2grey{
   color:#666666;
   position: relative;
- top:50px;
+  top:5vw;
   font-weight:200;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .little2grey {
+    top:2vw;
+  }
 }
 .sum{
   color:white;
@@ -577,6 +710,12 @@ p.little2{
   font-size: 30px;
   font-weight:bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .sum {
+  font-size:4vw;
+  height:5vw;
+  }
 }
 .ascuns1{
   display:none;
@@ -587,12 +726,22 @@ p.little2{
   bottom:0px;
   padding-left:42%;
 }
+@media screen and (max-width: 700px) {
+  .ascuns1 {
+   height:5%;
+  }
+}
 .book{
   width:80%;
   margin-left:1%;
   margin-top:15%;
   position:relative;
-  top:20px;
+  top:5vw;
+}
+@media screen and (max-width: 700px) {
+  .book {
+   top:3vw;
+  }
 }
 .book2{
   display: block;
@@ -986,10 +1135,134 @@ footer{
   background-color: #00ad7c;
   min-width: 1544px;
 }
+.destinations
 
+{
+  display: inline-block;
+  text-align: left;
+  font-size: 25px;
+  color: black;
+  bottom: 50px;
+  left:20%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+#dest1
+{  background-image: url("belgium (1).jpg");
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 250px;
+  width: 500px;
+
+}
+#dest2
+{  background-image: url("germany.jpg");
+ height: 250px;
+  width: 500px;
+}
+#dest3
+{  background-image: url("spain.jpg");
+height: 250px;
+ width: 400px;
+ margin-left: 5%;
+}
+#dest4
+{  background-image: url("portugal.jpg");
+height: 250px;
+ width: 400px;
+}
+#dest5
+{  background-image: url("greece.jpg");
+height: 250px;
+ width: 400px;
+}
+.flag
+{
+  height : 18px;
+  width: 30px;
+  position:absolute;
+  top: 85px;
+  background-size: 100% 100%;
+}
+#flag1
+{background-image: url("flagb.jpg");
+left:252px}
+#flag2
+{background-image: url("flagg.jpg");
+left:820px;
+}
+#flag3
+{background-image: url("flags.jpg");
+left: 150px;
+top: 380px;
+}
+#flag4
+{background-image: url("flagp.png");
+left: 630px;
+top: 380px;
+
+}
+#flag5
+{background-image: url("flaggreece.png");
+left :1070px;
+top: 380px;
+}
+.price
+{
+  height : 30px;
+  width: 100px;
+  position:absolute;
+  background-color: transparent;
+  font-size: 15px;
+  text-align: center;
+}
+.boxdest{
+display:inline-block;
+width:100%;
+height:700px;
+position:relative;
+top:0;
+background-color: whitesmoke;
+}
 body{
-
   width:100%;
   margin: 0;
   font-family: Arial,Helvetica,sans-serif;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: 	#A9A9A9/* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 0.7;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.transparent{
+  display:inline-block;
+
+  width:60%;
+
+  height:70%;
+  max-height: 530px;
+  float:left;
+  position:relative;
+  top:200px;
+  left:200px;
 }

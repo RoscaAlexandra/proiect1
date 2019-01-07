@@ -8,7 +8,7 @@
   <title> Proiect </title>
 
   <link type="text/css" href="1.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -125,11 +125,24 @@
  </div>
 
 
- <div class="transparent">
+ <div class="transparent autoSlides">
      <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
      <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
      <p class="little2 lefttext"> Fly to Hong Kong via Los Angeles,USA </p>
      <h1 class="large2 lefttext"> $599 </h1>
+ </div>
+ <div class="transparent autoSlides">
+     <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
+     <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
+     <p class="little2 lefttext"> Fly to Rome via London,UK </p>
+     <h1 class="large2 lefttext"> $149 </h1>
+ </div>
+
+ <div class="transparent autoSlides">
+     <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
+     <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
+     <p class="little2 lefttext"> Fly to Liechtenstein via Kyiv,Ukraine </p>
+     <h1 class="large2 lefttext"> $299 </h1>
  </div>
 
 
@@ -272,7 +285,7 @@
        <p class="whitesquare">Japan</p></a></div>
    <div  class="left part2"id="place6">
        <div class="part3"id="part31">Most popular destinations</div>
-       <div class="dim0"><button class="button2 fade">VIEW ALL DESTINATIONS</button></div>
+       <div class="dim0"><button class="button2 fade" id="view">VIEW ALL DESTINATIONS</button></div>
    </div>
 
    <div  class="part left"id="place7"><a class="link1" href="https://en.wikipedia.org/wiki/Paris" target="_blank">
@@ -423,6 +436,7 @@
 
   </div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"> &uarr; </button>
 
 </body>
 
@@ -467,7 +481,7 @@
   <ul class="nobullet">
     <li> Interest </li>
     <li> <br> </li>
-    <li> Beaches </li>
+    <li id="beach"> Beaches </li>
     <li> Family Travel </li>
     <li> Budget Travel </li>
     <li> Food & Drink </li>

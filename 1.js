@@ -5,9 +5,17 @@ function nr1() {
 
   document.getElementById("custom1").addEventListener("click", function(){
 
-     document.getElementById("patratgri").style.height = "1600px";
-     document.getElementById("redimensionat1").style.height="20%";
-     var abc=document.getElementById("redimensionat2").style.height="20%";
+     var x = window.matchMedia("(max-width: 700px)");
+     if(x.matches) document.getElementById("patratgri").style.height = "470vw";
+     else document.getElementById("patratgri").style.height = "120vw";
+
+     if(x.matches) document.getElementById("redimensionat1").style.height="10%";
+     else document.getElementById("redimensionat1").style.height="25vw";
+
+     if(x.matches)
+       var abc=document.getElementById("redimensionat2").style.height="40%";
+     else var abc=document.getElementById("redimensionat2").style.height="25vw";
+
      document.getElementById("ascunde").style.display="block";
      document.getElementById("arata").style.display="none";
 
@@ -18,7 +26,8 @@ function nr1() {
      div1.classList.add("third");
      div1.classList.add("dim2");
      div1.id="parinte";
-     div1.style.height="20%";
+     //div1.style.height="40%";
+
      //div.style.top="10px";
      div1.classList.add("adaugat");
      var copil1=document.createElement("div");
@@ -89,12 +98,21 @@ function nr2(copil1){
       }
 
 document.getElementById("custom2").addEventListener("click", function(){
+
        document.getElementById("ascunde").style.display="none";
        document.getElementById("arata").style.display="block";
-       var b= document.getElementById("parinte").remove();
-       document.getElementById("patratgri").style.height = "1000px";
-       document.getElementById("redimensionat1").style.height="33.33%";
-       var abc=document.getElementById("redimensionat2").style.height="33.33%";
+       document.getElementById("parinte").remove();
+       var x = window.matchMedia("(max-width: 700px)");
+       if(x.matches)  document.getElementById("patratgri").style.height = "300vw";
+       else document.getElementById("patratgri").style.height = "85vw";
+
+       if(x.matches) document.getElementById("redimensionat1").style.height="20%";
+       else document.getElementById("redimensionat1").style.height="25vw";
+
+       var abc;
+       if(x.matches)
+           abc=document.getElementById("redimensionat2").style.height="90%";
+       else  abc=document.getElementById("redimensionat2").style.height="30vw";
   });
 
 
@@ -136,3 +154,56 @@ document.getElementById("search").addEventListener("click",function(){
 document.getElementById("home_button").addEventListener("click",function(){
   location.href="1.html";
 });
+document.getElementById("view").addEventListener("click",function(){
+  location.href="3.html";
+});
+document.getElementById("beach").addEventListener("click",function(){
+  location.href="2.html";
+});
+//bianca
+window.onscroll = function() {scrollFunction()};
+   function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+//top
+
+  var myIndex = 0;
+  slider();
+
+  function slider() {
+  var i;
+  var x = document.getElementsByClassName("autoSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(slider, 2000);
+  }
+
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("manoSlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
