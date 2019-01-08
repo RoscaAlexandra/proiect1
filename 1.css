@@ -23,7 +23,7 @@
 
 header {
   width:100%;
-  height: 70px;
+  height: 75px;
   position: sticky;
   background-color: white;
   top:0;
@@ -77,6 +77,7 @@ img.littleplane{
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size:1.5vw;
+    cursor: pointer;
 
 }
 .option:hover{
@@ -108,7 +109,7 @@ img.littleplane{
   background-color: white;
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .option3{
     width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
     height:5vw;
@@ -124,7 +125,7 @@ img.littleplane{
   padding:0 0 5% 5%;
   background-color: white;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .option33 {
     width: 50%;
     height:5vw;
@@ -142,7 +143,7 @@ img.littleplane{
   padding:0 2% 5% 2%;
   background-color: white;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .option333 {
     width: 95%;
     height:5vw;
@@ -173,7 +174,7 @@ img.littleplane{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .option4 {
     height:0.5vw;
 
@@ -191,7 +192,7 @@ img.littleplane{
   font-family: Arial, Helvetica, sans-serif;
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .sel{
     width: 100%;
     height:0.1vw;
@@ -210,15 +211,15 @@ img.littleplane{
 .button2{
   color:white;
   padding:3%;
-  width:70%;
+  /*width:70%;*/
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
   border: 2px solid white;
   background-color: transparent;
-  height:3vw;
+  height:1%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .button2 {
   height:7vw;
   }
@@ -268,6 +269,11 @@ ul.nobullet{
   position:relative;
   top:0;
 }
+@media screen and (max-width:600px){
+  .box{
+    height:600px;
+  }
+}
 .box1{
   display:inline-block;
   width:100%;
@@ -275,6 +281,11 @@ ul.nobullet{
   position:relative;
   top:0;
   background-color: whitesmoke;
+}
+@media screen and (max-width:600px){
+  .box1{
+    height:1900px;
+  }
 }
 .littlebox{
   display:inline-block;
@@ -286,7 +297,7 @@ ul.nobullet{
   border-bottom: 1.5px solid #F68536;
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .littlebox {
 
     top:1vw;
@@ -305,10 +316,10 @@ ul.nobullet{
 
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .box2 {
-    width: 80%;
-    height:60vw;
+    width: 76%;
+    height:33.33%;
     font-size:3vw;
     float:left;
     margin-left:0;
@@ -321,12 +332,19 @@ ul.nobullet{
   height:75%;
   position:relative;
   top:0;
-  min-height: 525px;
-  min-width:200px;
+  /*min-height: 525px;
+  min-width:200px;*/
   /*padding-left: 2%;*/
   margin: 3% 5% 3% 0;
   letter-spacing: 2px;
 
+}
+@media screen and (max-width:600px){
+  .box2prim{
+    width:60%;
+    height:30%;
+    margin-top: 20%;
+  }
 }
 .box22
 {
@@ -413,7 +431,12 @@ ul.nobullet{
   letter-spacing: 0;
 }
 .down{
-padding-top: 15%;
+padding-top: 7%;
+}
+@media screen and(max-width:600px){
+  .down{
+    padding-top:3%;
+  }
 }
 .bgimg1{
   background-image: linear-gradient(to bottom right,#2F7087, #4D6469,#3E4C3C);
@@ -439,7 +462,7 @@ padding-top: 15%;
   height:85vw;
   position:relative;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .whitesmoke {
     width: 100%;
     height:300vw;
@@ -458,11 +481,11 @@ padding-top: 15%;
   left:10%;
   box-shadow: 0px 20px 15px -10px #661400;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .whitee {
-    width: 70%;
+    width: 50%;
     height:75%;
-    left:17%;
+    left:6%;
   }
 }
 .rosu{
@@ -472,18 +495,29 @@ padding-top: 15%;
   width:60%;
   float:left;
   position:absolute;
-  bottom:1vw;
+  bottom:0vw;
   left:20%;
   text-align: center;
   color:red;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1vw;
 
+}
+@media screen and (max-width:600px) {
+  .rosu{
+    height:10vw;
+    font-size: 2vw;
+  }
 }
 .whitecontainer{
   background-color: white;
   height: 450px;
+}
+@media screen and (max-width:600px){
+  .whitecontainer{
+    height:1350px;
+  }
 }
 .subwhitecontainer{
   width:30%;
@@ -493,6 +527,13 @@ padding-top: 15%;
   position: relative;
   top:10%;
   left:4%;
+}
+@media screen and (max-width:600px){
+.subwhitecontainer{
+  width:60%;
+  height:16%;
+  top:0px;
+}
 }
 .subsubwhitecontainer{
   width:60%;
@@ -552,14 +593,16 @@ p.little{
   color:white;
   position:relative;
   top:15%;
-  font-size: 15px;
+  font-size: 2vw;
   font-weight:200;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .little {
    font-size:2vw;
-   height:4vw;
+   height:1vw;
+   font-size: 3vw;
+   top:2%;
   }
 }
 p.little2{
@@ -567,13 +610,15 @@ p.little2{
   position:relative;
   top:14%;
   font-weight:200;
-  font-size: 20px;
+  font-size: 2vw;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 700px) {
-  .little2{
+@media screen and (max-width: 600px) {
+  p.little2{
    font-size:3vw;
    height:3vw;
+   top:10%;
+   font-size: 6vw;
   }
 }
 .fade{
@@ -602,7 +647,7 @@ p.little2{
 }
 .third{
   position:relative;
-  top:10px;
+  top:2vw;
   left:20%;
   height: 33.33vw;
 
@@ -622,9 +667,11 @@ p.little2{
   width: 50%;
   height: 30vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .dim1{
-  height:10%;
+  height:15%;
+  left:6%;
+
   }
 }
 
@@ -635,34 +682,62 @@ p.little2{
   width:100%;
   height:30vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .dim2{
     top:2vw;
-    left:5%;
-    height:40%;
-    width: 90%;
+    left:6%;
+    height:65%;
+    width: 65%;
   }
 }
 .adaugat{
   position:absolute;
   top:70vw;
-  height:20%;
+  height:35vw;
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .adaugat{
-   top:240vw;
-   height:50%;
+   top:50%;
+   height:40%;
+  }
+}
+.normal{
+  height:85vw;
+}
+@media screen and(max-width:600px){
+  .normal{
+    height:300vw;
+  }
+}
+/*@media screen and(max-width:600px){
+  .mare{
+    height:550vw;
+  }
+}*/
+.mare{
+  height:120vw;
+}
+@media screen and(max-width:900px){
+  .mare{
+    height:550vw;
   }
 }
 .dim3{
   position:relative;
-  top:0;
+  top:0%;
   left:15%;
   width:100%;
   height:50%;
   margin: 0;
 
+}
+@media screen and (max-width:600px){
+  .dim3{
+  left:7%;
+  width:70%;
+  height:70%;
+  }
 }
 .dim4{
   position:relative;
@@ -670,6 +745,12 @@ p.little2{
   left:25%;
   width: 50%;
   height: 25%;
+}
+@media screen and (max-width:600px){
+  .dim4{
+    left:7%;
+    height:5%;
+  }
 }
 .borderwhite{
   border:3px solid white;
@@ -685,7 +766,7 @@ p.little2{
   font-size: 5vw;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .largegrey {
   font-size:7vw;
   top:2vw;
@@ -698,7 +779,7 @@ p.little2{
   font-weight:200;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .little2grey {
     top:2vw;
   }
@@ -707,14 +788,14 @@ p.little2{
   color:white;
   position:relative;
   top:14%;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight:bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .sum {
   font-size:4vw;
-  height:5vw;
+  height:5%;
   }
 }
 .ascuns1{
@@ -726,9 +807,10 @@ p.little2{
   bottom:0px;
   padding-left:42%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .ascuns1 {
    height:5%;
+     padding-left:21%;
   }
 }
 .book{
@@ -736,11 +818,11 @@ p.little2{
   margin-left:1%;
   margin-top:15%;
   position:relative;
-  top:5vw;
+  top:3vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .book {
-   top:3vw;
+   top:10%;
   }
 }
 .book2{
@@ -752,6 +834,12 @@ p.little2{
   bottom:0px;
   padding-left:42%;
 }
+@media screen and (max-width:600px){
+  .book2{
+    padding-left:20%;
+    height:9%;
+  }
+}
 .learn
 {
  height:10%;
@@ -762,6 +850,11 @@ p.little2{
   width:100%;
   height:800px;
 
+}
+@media screen and (max-width:600px){
+  .boxx{
+    height:2430px;
+  }
 }
 .sep
 {
@@ -814,6 +907,13 @@ font-family:Arial, Helvetica, sans-serif;
   vertical-align: middle;
   line-height: 200px;
   color:white;
+}
+@media screen and (max-width:600px){
+  .part,.part2{
+    height:11%;
+    width:61%;
+    /*float:none;*/
+  }
 }
 .part3{
 width: 100%;
@@ -896,7 +996,22 @@ ul.nobullet2{
   position: absolute;
   bottom: 5%;
 }
-
+@media screen and (max-width:600px){
+  ul.nobullet2{
+    left:0%;
+    bottom:0%;
+    width:60%;
+    height:5%;
+    padding: 0px;
+  }
+}
+@media screen and (max-width:600px){
+ .img{
+   margin:2%;
+   width:20px;
+   height:20px;
+ }
+}
 footer{
   width:100%;
   height: 400px;
@@ -904,9 +1019,13 @@ footer{
   position:relative;
   bottom:0;
 }
-
+@media screen and (max-width:600px){
+  footer{
+    height:1500px;
+  }
+}
 .divfooter{
-  height:200 px;
+  height:200px;
   width:15%;
   text-align: left;
   position: relative;
@@ -914,7 +1033,12 @@ footer{
   left:5.5%;
   color:#9c9ea2;
 }
-
+@media screen and (max-width:600px){
+  .divfooter{
+    width:80%;
+    left:0px;
+  }
+}
 .white{
   color:white;
 }
@@ -1016,7 +1140,14 @@ footer{
     text-align: center;
     font-size: 15px;
 }
-
+@media screen and (max-width:600px){
+  .cutiemesaj1,.cutiemesaj2,.cutiemesaj3{
+    height:33%;
+    width:60%;
+    float:left;
+    position:static;
+  }
+}
 .cutieprs1{
   width: 37%;
   height: 10%;
@@ -1110,7 +1241,13 @@ footer{
   color: #f5f5f5;
   z-index: 1;
 }
-
+@media screen and (max-width:600px){
+  .cutieclitenti{
+    top:3%;
+    font-size:20px;
+    width:60%;
+  }
+}
 .ghilimele{
   font-size: 80px;
   color: #f5f5f5 ;
@@ -1126,14 +1263,24 @@ footer{
   position: absolute;
   top: 25%;
 }
-
+@media screen and (max-width:600px){
+  .cutiedemesaje{
+    height:90%;
+    top:10%;
+  }
+}
 .lightgreen{
   width: 100%;
   height: 650px;
   margin: 0;
   position: relative;
   background-color: #00ad7c;
-  min-width: 1544px;
+/*  min-width: 1544px;*/
+}
+@media screen and (max-width:600px){
+  .lightgreen{
+    height:1500px;
+  }
 }
 .destinations
 
@@ -1222,47 +1369,56 @@ top: 380px;
 .boxdest{
 display:inline-block;
 width:100%;
-height:700px;
+height:600px;
 position:relative;
 top:0;
 background-color: whitesmoke;
 }
 body{
   width:100%;
-  margin: 0;
+  height: 100%;
+  display: block;
+  margin:auto;
+  min-width:600px;
+  max-width:2000px;
   font-family: Arial,Helvetica,sans-serif;
 }
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: 	#A9A9A9/* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:whitesmoke;
+  color: red;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
   opacity: 0.7;
+
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
 }
 
 
 .transparent{
   display:inline-block;
-
   width:60%;
-
   height:70%;
   max-height: 530px;
   float:left;
   position:relative;
   top:200px;
   left:200px;
+}
+@media screens and(max-width:600px){
+  .transparent{
+    width:0vw;
+    height: 0vw;
+  }
 }

@@ -1,20 +1,23 @@
+//flights
 function nr1() {
   document.getElementById ("ascuns").style.display = "block";
       }
 
-
-  document.getElementById("custom1").addEventListener("click", function(){
-
+//show offers
+document.getElementById("custom1").addEventListener("click", function(){
      var x = window.matchMedia("(max-width: 700px)");
-     if(x.matches) document.getElementById("patratgri").style.height = "470vw";
+    if(x.matches) document.getElementById("patratgri").style.height = "550vw";
      else document.getElementById("patratgri").style.height = "120vw";
+    // document.getElementById("patratgri").classList.remove("normal");
+  //   document.getElementById("patratgri").classList.add("mare");
 
-     if(x.matches) document.getElementById("redimensionat1").style.height="10%";
+
+     if(x.matches) document.getElementById("redimensionat1").style.height="7%";
      else document.getElementById("redimensionat1").style.height="25vw";
 
      if(x.matches)
        var abc=document.getElementById("redimensionat2").style.height="40%";
-     else var abc=document.getElementById("redimensionat2").style.height="25vw";
+     else var abc=document.getElementById("redimensionat2").style.height="35vw";
 
      document.getElementById("ascunde").style.display="block";
      document.getElementById("arata").style.display="none";
@@ -59,17 +62,18 @@ function nr1() {
 
 
       });
+  //offers data
       var orase=["Bucharest","Liechnstein","Budapest"];
       var oferte=["1 nights+Flight 5*Hotel","5 nights+Flight 3*Hotel","2 nights+Flight 3*Hotel"];
       var suma=["$1,000","$1,200","$300"]
       s=0;
+//populate offers
 function nr2(copil1){
         var  p1=document.createElement("p");
          p1.classList.add("little2");
          p1.classList.add("lefttext");
          p1.innerText=orase[s];
          copil1.appendChild(p1);
-
 
          var p2=document.createElement("p");
          p2.classList.add("little");
@@ -96,7 +100,7 @@ function nr2(copil1){
          if(s==2) s=0;
          else  s++;
       }
-
+//hide offers
 document.getElementById("custom2").addEventListener("click", function(){
 
        document.getElementById("ascunde").style.display="none";
@@ -105,17 +109,20 @@ document.getElementById("custom2").addEventListener("click", function(){
        var x = window.matchMedia("(max-width: 700px)");
        if(x.matches)  document.getElementById("patratgri").style.height = "300vw";
        else document.getElementById("patratgri").style.height = "85vw";
+      // document.getElementById("patratgri").classList.remove("mare");
+      // document.getElementById("patratgri").classList.add("normal");
 
-       if(x.matches) document.getElementById("redimensionat1").style.height="20%";
+
+       if(x.matches) document.getElementById("redimensionat1").style.height="15%";
        else document.getElementById("redimensionat1").style.height="25vw";
 
        var abc;
        if(x.matches)
-           abc=document.getElementById("redimensionat2").style.height="90%";
+           abc=document.getElementById("redimensionat2").style.height="65%";
        else  abc=document.getElementById("redimensionat2").style.height="30vw";
   });
 
-
+//search button-verify
 document.getElementById("search").addEventListener("click",function(){
         var today = new Date();
         var dd = today.getDate();
@@ -131,26 +138,26 @@ document.getElementById("search").addEventListener("click",function(){
         var yyyy1 = data1.getFullYear();
         var dd2=data2.getDate();
 
-        if(isNaN(dd1)) text.innerText="Camp obligatoriu necompletat!";
-        if(isNaN(dd2)) text.innerText="Camp obligatoriu necompletat!";
+        if(isNaN(dd1)) text.innerText="Mandatory field!";
+        if(isNaN(dd2)) text.innerText="Mandatory field!";
 
-        if(data1>=data2)   text.innerText="Nu poti rezerva astfel!";
+        if(data1>=data2)   text.innerText="The dates are not good!";
 
 
-        if(yyyy1<yyyy) text.innerText="Nu poti rezerva pe o data mai mica decat astazi!";
+        if(yyyy1<yyyy) text.innerText="You can't book before today!";
         else if(yyyy1==yyyy)
-                if(mm1<mm) text.innerText="Nu poti rezerva pe o data mai mica decat astazi!";
+                if(mm1<mm) text.innerText="You can't book before today!";
                 else if(mm1==mm)
-                     if(dd1<dd) text.innerText="Nu poti rezerva pe o data mai mica decat astazi!";
+                     if(dd1<dd) text.innerText="You can't book before today!";
 
 
         var nradulti=document.getElementById("nradulti").value;
         var nrcopii=document.getElementById("nrcopii").value;
-        if(nradulti==0 || nrcopii==0)
-              text.innerText="Camp obligatoriu necompletat!";
+        if(nradulti==0 && nrcopii==0)
+              text.innerText="Mandatory field!";
 
 });
-
+//links
 document.getElementById("home_button").addEventListener("click",function(){
   location.href="1.html";
 });
@@ -160,6 +167,7 @@ document.getElementById("view").addEventListener("click",function(){
 document.getElementById("beach").addEventListener("click",function(){
   location.href="2.html";
 });
+
 //bianca
 window.onscroll = function() {scrollFunction()};
    function scrollFunction() {
@@ -185,7 +193,7 @@ window.onscroll = function() {scrollFunction()};
     x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
+  if (myIndex > x.length) {myIndex = 1;}
   x[myIndex-1].style.display = "block";
   setTimeout(slider, 2000);
   }
@@ -200,8 +208,8 @@ window.onscroll = function() {scrollFunction()};
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("manoSlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = x.length;}
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
