@@ -3,28 +3,32 @@
 <head>
   <title> Proiect </title>
   <link type="text/css" href="1.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
 
 <header>
-  <div class="travel left"> TRAVEL</div>
+
+
+
+  <div class="travel left"><img src="2.1.jpg" class="littleplane"><p class="inherited"> TRAVEL</p></div>
+
   <div class="option right">Contact </div>
   <div class="option right">Blog </div>
   <div class="option right">Car </div>
   <div class="option right">Hotel </div>
   <div class="option right">Flights </div>
   <div class="option right">Vacations </div>
-  <div class="option right"> Home </div>
-</header>
-<div class="orange">
+
+  <div class="option right" id="home_button"> Home </div>
 
 </div>
 
 
 </body>
 
-<<<<<<< HEAD
 <div class="boxx">
 <a href="http://google.com" target="_blank">  <div  class="part left" id="place1">Los Angeles</div> </a>
 <a href="http://google.com" target="_blank">   <div  class="part left"id="place2">Hongkong</div></a>
@@ -41,11 +45,9 @@
 <a href="http://google.com" target="_blank">   <div  class="part left"id="place9">Madagascar</div></a>
 <a href="http://google.com" target="_blank">   <div  class="part left"id="place10">Egypt</div></a>
 <a href="http://google.com" target="_blank">   <div  class="part left" id="place11">Indonesia</div></a>
-=======
->>>>>>> f8f0cd094f1565e9a8837a95fc87ab38d4aedea3
 
-<div class="orange box">
-  <div class="white">
+<div class="orange box" id="#home">
+  <div class="whitee">
   <div id="portocaliu" class="option2 left" onclick="nr1()"> Flight</div>
   <div class="option2 left"> Hotels </div>
   <div class="option2 left"> Packages</div>
@@ -54,7 +56,7 @@
   <div class="option4 left" > To: </div>
   <div class="option3 left" >
     <form>
-     <select class="sel"name="From">
+     <select class="sel"name="From" required>
        <option value="Los Angeles,USA">Los Angeles,USA</option>
        <option value="Tokyo,Japan">Tokyo,Japan</option>
        <option value="Venice,Italy">Venice,Italy</option>
@@ -66,10 +68,10 @@
        <option value="Iondonesia">Iondonesia</option>
     </select>
    </form>
- </div>
- <div class="option3 left">
+  </div>
+  <div class="option3 left">
    <form>
-    <select class="sel"name="From">
+    <select class="sel"name="From" required>
       <option value="Los Angeles,USA">Los Angeles,USA</option>
       <option value="Tokyo,Japan" selected>Tokyo,Japan</option>
       <option value="Venice,Italy">Venice,Italy</option>
@@ -83,107 +85,296 @@
   </form>
   </div>
 
-<div class="option4 left" > Check In: </div>
-<div class="option4 left" > Check Out: </div>
+ <div class="option4 left" > Check In: </div>
+ <div class="option4 left" > Check Out: </div>
 
-<div class="option3 left">
+ <div class="option3 left">
   <form >
-  <input class="sel" type="date" name="data">
+    <input id="data1" class="sel" type="date" name="data" required>
   </form>
-</div>
+ </div>
 
-<div class="option3 left">
+ <div class="option3 left">
   <form >
-  <input class="sel" type="date" name="data">
-</form>
-</div>
+     <input id="data2" class="sel" type="date" name="data" required>
+  </form>
+ </div>
 
-<div class="option4 left" > Class: </div>
-<div class="option33 left">
+ <div class="option4 left" > Class: </div>
+ <div class="option33 left">
   <form>
-   <select class="sel" name="class">
-     <option value="Economy"> Economy </option>
-     <option value="First Class" >First Class</option>
+   <select class="sel" name="class" required>
+      <option value="Economy"> Economy </option>
+      <option value="First Class" >First Class</option>
    </select>
   </form>
-</div>
+ </div>
 
-<div class="option4 left" > Adult: </div>
-<div class="option4 left" > Children: </div>
-<div class="option3 left">
+ <div class="option4 left" > Adult: </div>
+ <div class="option4 left" > Children: </div>
+ <div class="option3 left">
+   <form>
+     <input id="nradulti" class="sel" type="number" name="quantity" min="1" max="5" required>
+   </form>
+ </div>
+ <div class="option3 left">
   <form>
-    <input class="sel" type="number" name="quantity" min="1" max="5">
+    <input id="nrcopii" class="sel" type="number" name="quantity" min="1" max="5" required>
   </form>
-</div>
-<div class="option3 left">
-  <form>
-    <input class="sel" type="number" name="quantity" min="1" max="5">
-  </form>
-</div>
-<div class="option333 left">
-<button class="button1"> Search Flight </button>
-</div>
+ </div>
+ <div class="option333 left">
+   <button class="button1" id="search"> Search Flight </button>
+ </div>
+<div class="rosu" id="textbox"> </div>
+ </div>
 
-</div>
-  </div>
+ </div>
 
 
-
-<div class="left divfooter">
-
-  <div class="transparent">
+=======
+ <div class="transparent autoSlides">
      <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
      <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
      <p class="little2 lefttext"> Fly to Hong Kong via Los Angeles,USA </p>
-      <h1 class="large2 lefttext"> $599 </h1>
-  </div>
-<<<<<<< HEAD
-=======
+     <h1 class="large2 lefttext"> $599 </h1>
+ </div>
+ <div class="transparent autoSlides">
+     <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
+     <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
+     <p class="little2 lefttext"> Fly to Rome via London,UK </p>
+     <h1 class="large2 lefttext"> $149 </h1>
+ </div>
+
+ <div class="transparent autoSlides">
+     <p class="little fade lefttext">  HandCrafted by FreeHTML5.co </p>
+     <h1 class="largewhite lefttext"> Exclusive Limited Time Offer </h1>
+     <p class="little2 lefttext"> Fly to Liechtenstein via Kyiv,Ukraine </p>
+     <h1 class="large2 lefttext"> $299 </h1>
+ </div>
+
 
 >>>>>>> f8f0cd094f1565e9a8837a95fc87ab38d4aedea3
 </div>
 
 <!--patratica mare gri-->
-<div class="whitesmoke box">
-  <div class="third dim1">
+<div class="whitesmoke box" id="patratgri" >
+ <div class="third dim1" id="redimensionat1">
     <p class="largegrey centertext"> Hot Tours </p>
     <p class= "little2grey fade centertext"> Far far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the blind texts.
     </p>
-    <div class="littlebox">
+    <div class="littlebox"></div>
+ </div>
+
+ <div class="third dim2" id="redimensionat2">
+      <div class="box2 bgimg1">
+         <p class="little2 lefttext"> New York</p>
+         <p class="little fade lefttext down"> 3 nights+Flight 5*Hotel </p>
+         <p class="sum">$1,000</p>
+         <div class="book">
+         <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button> </div>
+     </div>
+        <div class="box2 bgimg2">
+          <p class="little2 lefttext"> Philippines</p>
+          <p class="little fade lefttext down"> 4 nights+Flight 5*Hotel </p>
+          <p class="sum">$1,000</p>
+          <div class="book">
+             <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button>
+          </div>
+        </div>
+       <div class="box2 bgimg3">
+          <p class="little2 lefttext">Hongkong</p>
+          <p class="little fade lefttext down"> 2 nights+Flight 4*Hotel </p>
+          <p class="sum">$1,000</p>
+          <div class="book">
+             <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button>
+          </div>
+      </div>
+  </div>
+  <div class="book2" id="arata" >
+     <button class="button21 fade " id="custom1" > SEE ALL OFFERS &nbsp;&nbsp; &rarr;</button>
+  </div>
+  <div class="ascuns1" id="ascunde" >
+     <button class="button21 fade " id="custom2" > HIDE OFFERS &nbsp;&nbsp; &rarr;</button>
+  </div>
+</div>
+
+
+<!--patratica alba-->
+<div class="whitecontainer box">
+
+
+  <div class="subwhitecontainer">
+     <img class="icon" src="1.1.png">
+     <div class="subsubwhitecontainer">
+         <p>  <b>Family Travel</b>
+         <br><br>
+            Facilis ipsum reprehenderit nemo molestias.
+            Aut cum mollitia reprehenderit.</p>
+         <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
+
+     </div>
+  </div>
+
+
+  <div class="subwhitecontainer">
+     <img class="icon" src="1.2.png">
+     <div class="subsubwhitecontainer">
+        <p>  <b>Travel Plans</b>
+        <br><br>
+          Facilis ipsum reprehenderit nemo molestias.
+          Aut cum mollitia reprehenderit.</p>
+        <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
+     </div>
+  </div>
+
+
+  <div class="subwhitecontainer">
+     <img class="icon" src="1.3.png">
+     <div class="subsubwhitecontainer">
+       <p>  <b>Honeymoon</b>
+       <br><br>
+          Facilis ipsum reprehenderit nemo molestias.
+          Aut cum mollitia reprehenderit.</p>
+       <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
+    </div>
+ </div>
+
+
+  <div class="subwhitecontainer">
+     <img class="icon" src="1.4.png">
+     <div class="subsubwhitecontainer">
+        <p>  <b>Business Travel</b>
+        <br><br>
+          Facilis ipsum reprehenderit nemo molestias.
+          Aut cum mollitia reprehenderit.</p>
+        <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
     </div>
   </div>
 
-  <div class="third dim2">
-      <div class="box2 bgimg1">
-        <p class="little2 lefttext"> New York</p>
-        <p class="little fade lefttext down"> 3 nights+Flight 5*Hotel </p>
-        <p class="sum">$1,000</p>
-        <div class="book">
-        <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button> </div>
+
+  <div class="subwhitecontainer">
+      <img class="icon" src="1.5.png">
+      <div class="subsubwhitecontainer">
+        <p>  <b>Solo Travel</b>
+        <br><br>
+          Facilis ipsum reprehenderit nemo molestias.
+          Aut cum mollitia reprehenderit.</p>
+        <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
+      </div>
+ </div>
 
 
-      </div>
-      <div class="box2 bgimg2">
-        <p class="little2 lefttext"> Philippines</p>
-        <p class="little fade lefttext down"> 4 nights+Flight 5*Hotel </p>
-        <p class="sum">$1,000</p>
-        <div class="book">
-        <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button> </div>
-      </div>
-      <div class="box2 bgimg3">
-        <p class="little2 lefttext">Hongkong</p>
-        <p class="little fade lefttext down"> 2 nights+Flight 4*Hotel </p>
-        <p class="sum">$1,000</p>
-        <div class="book">
-        <button class="button2"> BOOK NOW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</button> </div>
-      </div>
+  <div class="subwhitecontainer">
+      <img class="icon" src="1.6.png">
+      <div class="subsubwhitecontainer">
+         <p>  <b>Explorer</b>
+         <br><br>
+           Facilis ipsum reprehenderit nemo molestias.
+           Aut cum mollitia reprehenderit.</p>
+         <a class="orangelink fade" target="_blank" href="http://www.google.com"> Learn More</a>
+     </div>
   </div>
-  <div class="book2">
-    <button class="button21 "> SEE ALL OFFERS &nbsp;&nbsp; &rarr;</button>
+
+
+</div>
+<!-- locatii -->
+<div class="boxx">
+
+
+   <div  class="part left" id="place1"><a class="link1" href="https://en.wikipedia.org/wiki/Los_Angeles" target="_blank">
+       <p class="whitesquare">Los Angeles</p> </a></div>
+   <div  class="part left"id="place2"><a class="link1" href="https://en.wikipedia.org/wiki/Hong_Kong" target="_blank">
+       <p class="whitesquare">Hongkong</p></a></div>
+   <div  class="part left"id="place3"><a class="link1" href="https://en.wikipedia.org/wiki/Italy" target="_blank">
+       <p class="whitesquare">Italy</p></a></div>
+   <div  class="part left"id="place4"><a class="link1" href="https://en.wikipedia.org/wiki/Philippines" target="_blank">
+       <p class="whitesquare">Philippines</p></a></div>
+   <div class="part left"id="place5"><a class="link1" href="https://en.wikipedia.org/wiki/Japan" target="_blank">
+       <p class="whitesquare">Japan</p></a></div>
+   <div  class="left part2"id="place6">
+       <div class="part3"id="part31">Most popular destinations</div>
+       <div class="dim0"><button class="button2 fade" id="view">VIEW ALL DESTINATIONS</button></div>
+   </div>
+
+   <div  class="part left"id="place7"><a class="link1" href="https://en.wikipedia.org/wiki/Paris" target="_blank">
+       <p class="whitesquare">Paris</p></a>
+   </div>
+   <div class="part left"id="place8"><a class="link1" href="https://en.wikipedia.org/wiki/Singapore" target="_blank">
+       <p class="whitesquare">Singapore</p></a>
+   </div>
+   <div  class="part left"id="place9"><a class="link1" href="https://en.wikipedia.org/wiki/Madagascar" target="_blank">
+       <p class="whitesquare">Madagascar</p></a>
+   </div>
+   <div  class="part left"id="place10"><a class="link1" href="https://en.wikipedia.org/wiki/Egypt" target="_blank">
+       <p class="whitesquare">Egypt</p></a>
+   </div>
+   <div  class="part left" id="place11"><a class="link1" href="https://en.wikipedia.org/wiki/Indonesia" target="_blank">
+       <p class="whitesquare">Indonesia</p></a>
+   </div>
+
+
+</div>
+
+
+<!--blog-->
+<div class=" box1">
+  <div class="third dim4">
+    <p class="largegrey centertext"> Recent From Blog</p>
+    <p class= "little2grey fade centertext"> Lorem ipsum dolor sit amet,consecteur adipisicing elit.Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debtis.
+    </p>
+    <div class="littlebox">  </div>
+  </div>
+
+  <div class="third dim3">
+    <div class="box2prim">
+      <div class=" box22 bgimg4"></div>
+      <div class="box23">
+
+        <p class="inbox1 lefttext"> 30% Discount to Travel All Around the World </p>
+          <p class="inbox2 fade sep"> Sep 15th</p>
+          <div class="micmic">
+               <p class="pmicmic">21</p>
+               <img class="imgmicmic"src="3.1.png">
+          </div>
+        <p class="inbox2 fade lefttext"> Far far away,behind the world mountains,far from the countries Vokalia and Consonantia,there live the blind texts. </p>
+        <p class="inbox3 fade lefttext">
+        <a href="http://google.com" target="_blank" class="learn" >Learn More...</a> </p>
+
+      </div>
+    </div>
+      <div class="box2prim">
+        <div class="box22 bgimg5"></div>
+        <div class="box23">
+        <p class="inbox1 "> Planning for Vacation</p>
+        <p class="inbox2 fade sep"> Sep 15th </p>
+        <div class="micmic">
+             <p class="pmicmic">21</p>
+             <img class="imgmicmic"src="3.1.png">
+        </div>
+        <p class="inbox2 fade lefttext"> Far far away,behind the world mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+        <p class="inbox3 fade lefttext">
+          <a href="http://google.com" target="_blank" class="learn">Learn More...</a></p>
+
+      </div>
+    </div>
+    <div class="box2prim">
+      <div class="box22 bgimg6"></div>
+      <div class="box23">
+        <p class="inbox1">Visit Tokyo Japan</p>
+        <p class="inbox2 fade sep"> Sep 15th</p>
+        <div class="micmic">
+             <p class="pmicmic">21</p>
+             <img class="imgmicmic"src="3.1.png">
+        </div>
+        <p class="inbox2 fade lefttext"> Far far away,behind the world mountains,far from the countries Vokalia and Consonantia,there live the blind texts.</p>
+        <p class="inbox3 fade lefttext">
+         <a href="http://google.com" target="_blank" class="learn">Learn More...</a></p>
+      </div>
   </div>
 </div>
-<!--patratica alba-->
-<div class="white box">
+<div class="book2">
+  <button class="button21 fade "> SEE ALL POST &nbsp;&nbsp; &rarr; </button>
+</div>
 </div>
 
 <script src="1.js">
@@ -205,10 +396,6 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-</body>
-
-=======
 <!--bianca-->
 <div class="boxx">
 <a href="http://google.com" target="_blank">  <div  class="part left" id="place1">Los Angeles</div> </a>
@@ -228,7 +415,78 @@
 <a href="http://google.com" target="_blank">   <div  class="part left" id="place11">Indonesia</div></a>
 </div>
 <!-- Topana la platane -->
->>>>>>> f8f0cd094f1565e9a8837a95fc87ab38d4aedea3
+=======
+<!--top-->
+<div class="container lightgreen">
+  <div class="cutieclitenti"> <h2>Happy Clients</h2> </div>
+    <div class="cutiedemesaje">
+
+    <div class="cutiemesaj1">
+      <span class="dot">
+        <span class="ghilimele">&#8221;
+        </span>
+        <span class="dot2"> </span>
+        <span class="dot3"> </span>
+      </span>
+
+      <div class="interiorcutie1">
+      "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      </div>
+
+      <div class="cutieprs1"> John Doe, CEO </div>
+      <div class="cutieprsA"> FREEGTML5.co </div>
+      <div class="cutieprsKappa"> Creative Director </div>
+
+      <span class="triunghi">
+      </span>
+    </div>
+
+    <div class="cutiemesaj2">
+      <span class="dot">
+        <span class="ghilimele">&#8221;
+        </span>
+        <span class="dot2"> </span>
+        <span class="dot3"> </span>
+      </span>
+
+      <div class="interiorcutie1">
+      "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+      </div>
+      <div class="cutieprs1">John Doe, CEO </div>
+      <div class="cutieprsA"> FREEGTML5.co </div>
+      <div class="cutieprsKappa"> Creative Director </div>
+
+      <span class="triunghi">
+      </span>
+    </div>
+
+    <div class="cutiemesaj3">
+      <span class="dot">
+        <span class="ghilimele">&#8221;
+        </span>
+        <span class="dot2"> </span>
+        <span class="dot3"> </span>
+      </span>
+
+      <div class="interiorcutie1">
+      "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      </div>
+
+      <div class="cutieprs1">John Doe, CEO </div>
+      <div class="cutieprsA"> FREEGTML5.co </div>
+      <div class="cutieprsKappa"> Creative Director </div>
+
+      <span class="triunghi">
+      </span>
+    </div>
+
+  </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"> &uarr; </button>
+
+</body>
+
+>>>>>>> 5c74a8139de7bbba530507552089fff2fe8bb576
 <footer>
 
 <div class="left divfooter">
@@ -236,10 +494,11 @@
     <li> About Travel </li>
     <li> <br> </li>
     <li> Far far away, behind me
-    word mountains, far from
-    the countries Vokalia and
-    Consonantia, there live
-    the blind text. </li>
+
+    word mountains,</li> <li>far from
+     the countries Vokalia and</li>
+    <li>Consonantia, there live
+     the blind text. </li>
   </ul>
 </div>
 
@@ -254,6 +513,62 @@
       <li> New York flights </li>
     </ul>
 </div>
+
+<div class="left divfooter">
+  <ul class="nobullet">
+    <li> Top Hotels </li>
+    <li> <br> </li>
+    <li> Boracay Hotel </li>
+    <li> Dubai Hotel </li>
+    <li> Singapore Hotel </li>
+    <li> Manila Hotel </li>
+  </ul>
+</div>
+
+<div class="left divfooter">
+  <ul class="nobullet">
+    <li> Interest </li>
+    <li> <br> </li>
+    <li id="beach"> Beaches </li>
+    <li> Family Travel </li>
+    <li> Budget Travel </li>
+    <li> Food & Drink </li>
+    <li> Honeymoon and Romance </li>
+  </ul>
+</div>
+
+<div class="left divfooter">
+  <ul class="nobullet">
+    <li> Best Places </li>
+    <li> <br> </li>
+    <li> Boracay Beach </li>
+    <li> Dubai </li>
+    <li> Singapore </li>
+    <li> Hongkong </li>
+  </ul>
+</div>
+
+<div class="left divfooter">
+  <ul class="nobullet">
+    <li> Affordable </li>
+    <li> <br> </li>
+    <li> Food & Drink </li>
+    <li> Fare Flights </li>
+  </ul>
+</div>
+
+<ul class="nobullet2">
+  <img src="twitter.jpg" class="img" alt="Twitter" width="45" height="35" />
+  <img src="facebook.jpg" class="img" alt="facebook" width="40" height="35" />
+  <img src="instagram.jpg" class="img" alt="instagram" width="40" height="35" />
+  <img src="basketball.jpg" class="img" alt="basketball" width="40" height="35" />
+  <img src="youtube.jpg" class="img" alt="youtube" width="40" height="37" />
+  <li> Copyright 2016 Free Html5 Module. All Rights Reserved. </li>
+  <li> Made with <img src="inima.jpg" alt="love" width="10" height="10" />
+ by Freehtml5.co / Demo Images: Unsplash </li>
+</ul>
+
+</footer>
 
 <div class="left divfooter">
   <ul class="nobullet">
@@ -310,4 +625,8 @@
 
 </footer>
 
+<script src="1.js">
+</script>
+
+</body>
 </html>
