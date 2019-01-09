@@ -6,18 +6,22 @@ function nr1() {
 //show offers
 document.getElementById("custom1").addEventListener("click", function(){
      var x = window.matchMedia("(max-width: 700px)");
-    if(x.matches) document.getElementById("patratgri").style.height = "550vw";
-     else document.getElementById("patratgri").style.height = "120vw";
-    // document.getElementById("patratgri").classList.remove("normal");
-  //   document.getElementById("patratgri").classList.add("mare");
+    /*if(x.matches) document.getElementById("patratgri").style.height = "550vw";
+     else document.getElementById("patratgri").style.height = "120vw";*/
+     document.getElementById("patratgri").classList.remove("normal");
+     document.getElementById("patratgri").classList.add("mare");
 
 
-     if(x.matches) document.getElementById("redimensionat1").style.height="7%";
-     else document.getElementById("redimensionat1").style.height="25vw";
+    /* if(x.matches) document.getElementById("redimensionat1").style.height="7%";
+     else document.getElementById("redimensionat1").style.height="25vw";*/
+     document.getElementById("redimensionat1").classList.remove("mic2");
+     document.getElementById("redimensionat1").classList.add("mare2");
 
-     if(x.matches)
+    /* if(x.matches)
        var abc=document.getElementById("redimensionat2").style.height="40%";
-     else var abc=document.getElementById("redimensionat2").style.height="35vw";
+     else var abc=document.getElementById("redimensionat2").style.height="35vw";*/
+     document.getElementById("redimensionat2").classList.remove("mic1");
+     document.getElementById("redimensionat2").classList.add("mare1");
 
      document.getElementById("ascunde").style.display="block";
      document.getElementById("arata").style.display="none";
@@ -107,19 +111,23 @@ document.getElementById("custom2").addEventListener("click", function(){
        document.getElementById("arata").style.display="block";
        document.getElementById("parinte").remove();
        var x = window.matchMedia("(max-width: 700px)");
-       if(x.matches)  document.getElementById("patratgri").style.height = "300vw";
-       else document.getElementById("patratgri").style.height = "85vw";
-      // document.getElementById("patratgri").classList.remove("mare");
-      // document.getElementById("patratgri").classList.add("normal");
+       /*if(x.matches)  document.getElementById("patratgri").style.height = "300vw";
+       else document.getElementById("patratgri").style.height = "85vw";*/
+       document.getElementById("patratgri").classList.remove("mare");
+       document.getElementById("patratgri").classList.add("normal");
 
 
-       if(x.matches) document.getElementById("redimensionat1").style.height="15%";
-       else document.getElementById("redimensionat1").style.height="25vw";
+      /* if(x.matches) document.getElementById("redimensionat1").style.height="15%";
+       else document.getElementById("redimensionat1").style.height="25vw";*/
+       document.getElementById("redimensionat1").classList.remove("mare2");
+       document.getElementById("redimensionat1").classList.add("mic2");
 
-       var abc;
+      /* var abc;
        if(x.matches)
            abc=document.getElementById("redimensionat2").style.height="65%";
-       else  abc=document.getElementById("redimensionat2").style.height="30vw";
+       else  abc=document.getElementById("redimensionat2").style.height="30vw";*/
+       document.getElementById("redimensionat2").classList.remove("mare1");
+       document.getElementById("redimensionat2").classList.add("mic1");
   });
 
 //search button-verify
